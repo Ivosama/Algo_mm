@@ -19,7 +19,7 @@ def saveMatrix(matrixA, matrixB, filename):
             f.write("\t".join(map(str, line)) + "\n")
 
 
-n = 40
+n = 10
 matrixA = createRandomMatrix(n)
 matrixB = createRandomMatrix(n)
-saveMatrix(matrixA, matrixB, "matrix40")
+saveMatrix(matrixA, matrixB, "matrix10")

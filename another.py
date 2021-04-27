@@ -4,7 +4,7 @@ from read import read
 #import psutil
 from memory_profiler import profile
 import time
-from try3_strassen import print_matrix
+#from try3_strassen import print_matrix
 
 '''
 # inner psutil function
@@ -33,7 +33,7 @@ def profile(func):
 
 def matrix_multiply(X, Y):
   n = len(X)
-  maxi = 0 #max iterations
+  maxi = 0 #max iterations?
 
   for i in range(n):
     for j in range(n):
@@ -60,7 +60,7 @@ def matrix_multiply(X, Y):
       result_matrix[i][j] = int(C[i] * D[j] / (10 ** (P * (n-1)))) % (10 ** P)
   return result_matrix
 
-A, B = read('matrix40')
+A, B = read('matrix80')
 
 time_start = time.clock()
 

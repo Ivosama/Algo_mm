@@ -169,7 +169,7 @@ def strassen(X, Y):
   return result_matrix
 
 
-X, Y = read('matrix40')
+X, Y = read('matrix80')
 
 time_start = time.clock()
 
